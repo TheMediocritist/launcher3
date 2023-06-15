@@ -3,6 +3,7 @@ import os
 import sys 
 
 ## local UI import
+#sys.path.remove('/home/cpi/launcher/Menu/GameShell/10_Settings')
 sys.path.append(os.path.dirname(__file__))
 print(sys.path)
 from Sound import pages
