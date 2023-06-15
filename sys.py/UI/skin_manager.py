@@ -41,7 +41,7 @@ class SkinManager(object):
         if not pygame.font.get_init():
             pygame.font.init()
         
-        skinpath = config.SKIN+"/truetype"
+        skinpath = "../skin/"+config.SKIN+"/truetype"
         fonts_path = {}
         fonts_path["varela"] = "%s/VarelaRound-Regular.ttf" % skinpath
         fonts_path["veramono"] = "%s/VeraMono.ttf" % skinpath
