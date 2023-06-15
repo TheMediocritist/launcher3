@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*- 
+import sys
 
 ## local UI import
 sys.path.append("../Menu/GameShell/10_Settings/Wifi")

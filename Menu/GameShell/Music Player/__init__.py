@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 import pygame
+import sys
 
 ## local UI import
 sys.path.append("../Menu/GameShell/Music Player")
