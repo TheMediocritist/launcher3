@@ -11,7 +11,7 @@ from datetime import datetime
 import base64
 from beeprint import pp
 
-from util_funcs  import midRect,SkinMap
+from UI.util_funcs  import midRect,SkinMap
 from fonts       import fonts
 
 BlankPng = SkinMap("gameshell/blank.png")  ## 80x80

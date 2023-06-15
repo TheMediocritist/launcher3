@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 import pygame
 
-from util_funcs  import midRect
+from UI.util_funcs  import midRect
 
 from libs.roundrects import aa_round_rect
 

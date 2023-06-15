@@ -10,7 +10,7 @@ from UI.constants import Width,Height,ICON_TYPES
 from page   import Page,PageSelector
 from label  import Label
 from fonts  import fonts
-from util_funcs import midRect
+from UI.util_funcs import midRect
 from keys_def   import CurKeys
 from confirm_page import ConfirmPage
 

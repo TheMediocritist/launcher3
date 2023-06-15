@@ -6,7 +6,7 @@ from sys import exit
 import os
 import sys
 
-from util_funcs  import SkinMap
+from UI.util_funcs  import SkinMap
 ##pool only store surfaces
 
 class IconPool(object):

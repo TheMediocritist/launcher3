@@ -13,7 +13,7 @@ from page        import Page,PageStack
 from title_bar   import TitleBar
 from foot_bar    import FootBar
 from UI.constants   import Width,Height,bg_color
-from util_funcs  import midRect
+from UI.util_funcs  import midRect
 from fonts       import fonts
 from keys_def    import CurKeys
 from label       import Label

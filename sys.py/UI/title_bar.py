@@ -17,7 +17,7 @@ from icon_item   import IconItem
 from multi_icon_item import MultiIconItem
 from icon_pool   import MyIconPool
 
-from util_funcs  import midRect,SwapAndShow,SkinMap
+from UI.util_funcs  import midRect,SwapAndShow,SkinMap
 
 from config import Battery
 

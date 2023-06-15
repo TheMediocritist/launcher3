@@ -5,7 +5,7 @@ import pygame
 
 ## local import
 from UI.constants  import icon_width,icon_height,ICON_TYPES,ALIGN,icon_ext,Width,Height
-from util_funcs import color_surface,midRect
+from UI.util_funcs import color_surface,midRect
 from label      import Label
 from icon_item  import IconItem
 

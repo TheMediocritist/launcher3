@@ -14,7 +14,7 @@ from libs import easing
 
 ### local import
 from UI.constants    import ALIGN,icon_width,icon_height,Width,Height,ICON_TYPES
-from util_funcs   import midRect
+from UI.util_funcs   import midRect
 from keys_def     import CurKeys
 from icon_pool    import MyIconPool
 
