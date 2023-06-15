@@ -349,7 +349,7 @@ def big_loop():
 if __name__ == '__main__':
     
     os.environ['SDL_VIDEO_CENTERED'] = '1'
-    X_center_mouse()
+    #X_center_mouse()
     
     os.chdir( os.path.dirname(os.path.realpath(__file__)) )
     
