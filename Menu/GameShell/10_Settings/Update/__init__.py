@@ -130,7 +130,7 @@ class UpdateConfirmPage(ConfirmPage):
             if self._URL != None and validators.url(self._URL):
                 self._DownloadPage.StartDownload(self._URL, "/tmp")
             else:
-                print "error url  %s " % self._URL
+                print("error url  %s " % self._URL)
             
 
     def OnReturnBackCb(self):
