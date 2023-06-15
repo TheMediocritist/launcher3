@@ -17,7 +17,7 @@ from UI.slider     import Slider
 from UI.icon_pool  import MyIconPool
 from UI.multi_icon_item import MultiIconItem
 from config import BackLight
-import myvars
+from Brightness import myvars
 
 class BSlider(Slider):
 
