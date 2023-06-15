@@ -35,14 +35,15 @@ def setup_dbus(force=True):
         print >> sys.stderr,\
             _("Can't connect to wicd daemon,trying to start it automatically...")
     else:
+        print("deleted dbusmanager")
         #bus = dbusmanager.get_bus()
         #dbus_ifaces = dbusmanager.get_dbus_ifaces()
-        daemon      = dbus_ifaces["daemon"] ## @dbus.service.method('org.wicd.daemon')
-        wireless    = dbus_ifaces["wireless"] ## @dbus.service.method('org.wicd.daemon.wireless')
-        wired       = dbus_ifaces["wired"]    ## @
+        #daemon      = dbus_ifaces["daemon"] ## @dbus.service.method('org.wicd.daemon')
+        #wireless    = dbus_ifaces["wireless"] ## @dbus.service.method('org.wicd.daemon.wireless')
+        #wired       = dbus_ifaces["wired"]    ## @
 
-        if not daemon:
-            print("Error connecting to wicd via D-Bus")
+        #if not daemon:
+        #    print("Error connecting to wicd via D-Bus")
 
     
     return True
