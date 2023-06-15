@@ -394,7 +394,7 @@ class MainScreen(object):
                     if self.IsPythonPackage(_dir+"/"+i):
                         iconitem._MyType  = ICON_TYPES["FUNC"]
                         sys.path.append(_dir)
-                        iconitem._CmdPath = __import__(i)
+                        iconitem._CmdPath = __import__(_dir+"/"+i)
                         init_cb  = getattr(iconitem._CmdPath,"Init",None)
                         if init_cb != None:
                             if callable(init_cb):
