@@ -13,7 +13,7 @@ from libs import easing
 #from beeprint import pp
 
 ### local import
-from constants    import ALIGN,icon_width,icon_height,Width,Height,ICON_TYPES
+from UI.constants    import ALIGN,icon_width,icon_height,Width,Height,ICON_TYPES
 from util_funcs   import midRect
 from keys_def     import CurKeys
 from icon_pool    import MyIconPool

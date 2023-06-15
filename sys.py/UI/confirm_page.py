@@ -6,7 +6,7 @@ import os
 from libs.roundrects import aa_round_rect
 
 #UI lib
-from constants import Width,Height,ICON_TYPES
+from UI.constants import Width,Height,ICON_TYPES
 from page   import Page,PageSelector
 from label  import Label
 from fonts  import fonts

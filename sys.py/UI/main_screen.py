@@ -12,12 +12,12 @@ from datetime import datetime
 from beeprint import pp
 
 ## local package import
-from constants   import ICON_TYPES,icon_ext,icon_width,icon_height,RUNEVT
+from UI.constants   import ICON_TYPES,icon_ext,icon_width,icon_height,RUNEVT
 from icon_item   import IconItem
 from page        import Page,PageStack
 from title_bar   import TitleBar
 from foot_bar    import FootBar
-from constants   import Width,Height,bg_color
+from UI.constants   import Width,Height,bg_color
 from util_funcs  import midRect,FileExists,ReplaceSuffix,ReadTheFileContent,CmdClean,MakeExecutable,SkinMap
 from fonts       import fonts
 from keys_def    import CurKeys

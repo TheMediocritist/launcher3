@@ -5,7 +5,7 @@ import os
 
 
 ##local import 
-from constants  import Width,Height,ICON_TYPES,ALIGN
+from UI.constants  import Width,Height,ICON_TYPES,ALIGN
 from util_funcs import FileExists,midRect,SkinMap
 from icon_item  import IconItem
 from fonts      import fonts

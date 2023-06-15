@@ -11,7 +11,7 @@ from datetime import datetime
 import alsaaudio
 
 ##local import
-from constants   import ICON_TYPES,Width,Height
+from UI.constants   import ICON_TYPES,Width,Height
 from fonts       import fonts
 from icon_item   import IconItem
 from multi_icon_item import MultiIconItem
