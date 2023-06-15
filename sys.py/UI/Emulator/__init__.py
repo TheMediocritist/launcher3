@@ -12,8 +12,8 @@ from UI.delete_confirm_page import DeleteConfirmPage
 from UI.icon_pool           import MyIconPool
 from UI.keys_def            import CurKeys
 
-from rom_list_page import RomListPage
-from fav_list_page import FavListPage
+from UI.Emulator.rom_list_page import RomListPage
+from UI.Emulator.fav_list_page import FavListPage
 
 class FavDeleteConfirmPage(DeleteConfirmPage):
     
