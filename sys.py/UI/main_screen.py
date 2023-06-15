@@ -394,12 +394,14 @@ class MainScreen(object):
                         iconitem._ImageName = ""
                         
                     if self.IsPythonPackage(_dir+"/"+i):
+                        print(str(self) + "Is python package")
                         iconitem._MyType  = ICON_TYPES["FUNC"]
+                        print("appending " + _dir + "to sys.path")
                         sys.path.append(_dir)
                         #iconitem._CmdPath = importlib.import_module(i)
-                        print(sys.path)
+                        print("importing " + str(i))
                         iconitem._CmdPath = __import__("/GameShell/10_Settings/"+i)
-                        print("Imported: " + i)
+                        print("Imported: " + str(i))
                         init_cb  = getattr(iconitem._CmdPath,"Init",None)
                         if init_cb != None:
                             if callable(init_cb):
