@@ -12,7 +12,9 @@ import sys
 #from wicd import wpath
 #from wicd import dbusmanager
 import time
-import gobject
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import GLib, Gtk, Gdk, GObject
 
 
 import socket
@@ -366,9 +368,9 @@ if __name__ == '__main__':
     
     setup_dbus()
 
-    gobject.threads_init()
+    Gdk.threads_init()
     
-    gobject_main_loop = gobject.MainLoop()
+    gobject_main_loop = GObject.MainLoop()
 
 #    if pygame.display.get_active() == True:
 #        print("I am actived")
