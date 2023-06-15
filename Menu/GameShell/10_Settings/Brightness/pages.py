@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*- 
 
-from brightness_page import BrightnessPage
+from Brightness.brightness_page import BrightnessPage
 
-import myvars
+from Brightness import myvars
 
 def InitBrightnessPage(main_screen):
 
