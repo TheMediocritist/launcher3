@@ -20,7 +20,7 @@ from UI.scroller  import ListScroller
 
 from UI.Emulator.rom_so_confirm_page import RomSoConfirmPage
 
-from list_item  import ListItem
+from UI.Emulator.list_item  import ListItem
 
 
 class FavStack:

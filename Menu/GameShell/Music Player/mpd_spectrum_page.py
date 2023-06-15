@@ -23,7 +23,7 @@ from threading  import Thread
 
 
 
-from list_item  import ListItem
+from UI.Emulator.list_item  import ListItem
 
 import myvars
 

@@ -16,7 +16,7 @@ from UI.multi_icon_item import MultiIconItem
 from UI.icon_pool           import MyIconPool
 from UI.scroller   import ListScroller
 
-from list_item  import ListItem
+from UI.Emulator.list_item  import ListItem
 
 
 import myvars

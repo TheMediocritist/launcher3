@@ -14,7 +14,7 @@ from UI.util_funcs import midRect,FileExists
 from UI.keys_def   import CurKeys
 from UI.scroller   import ListScroller
 
-from list_item  import ListItem
+from UI.Emulator.list_item  import ListItem
 
 import myvars
 
