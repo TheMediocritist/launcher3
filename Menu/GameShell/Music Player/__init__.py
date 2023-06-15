@@ -3,8 +3,10 @@
 import pygame
 
 ## local UI import
+sys.path.append("../Menu/GameShell/Music Player")
 import pages
 import myvars
+sys.path.remove("../Menu/GameShell/Music Player")
 
 def Init(main_screen):
     pages.InitPoller()

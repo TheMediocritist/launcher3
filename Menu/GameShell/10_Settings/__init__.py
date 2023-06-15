@@ -20,6 +20,7 @@ print("importing pages.py with sys.path that looks like:")
 print(sys.path)
 import pages
 import myvars
+sys.path.remove("../Menu/GameShell/10_Settings")
 
 def Init(main_screen):
     pages.InitListPage(main_screen)
