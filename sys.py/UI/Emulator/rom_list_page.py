@@ -23,7 +23,7 @@ from UI.multi_icon_item import MultiIconItem
 from UI.icon_pool  import MyIconPool
 from UI.scroller   import ListScroller
 
-from rom_so_confirm_page import RomSoConfirmPage
+from UI.Emulator.rom_so_confirm_page import RomSoConfirmPage
 
 from UI.Emulator.list_item  import ListItem
 import config
