@@ -9,7 +9,6 @@ import gobject
 import validators
 #from pySmartDL import SmartDL
 
-
 from libs.roundrects import aa_round_rect
 
 ## local UI import
