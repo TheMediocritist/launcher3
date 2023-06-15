@@ -15,7 +15,8 @@ import base64
 from beeprint import pp
 
 ## local UI import
-print("importing pages.py with sys.path that looks like: " + sys.path)
+print("importing pages.py with sys.path that looks like:")
+print(sys.path)
 import pages
 import myvars
 
