@@ -11,7 +11,7 @@ from datetime import datetime
 import base64
 from beeprint import pp
 
-
+print (sys.path)
 ## local UI import
 import pages
 import myvars
