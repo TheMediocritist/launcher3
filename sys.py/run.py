@@ -48,9 +48,6 @@ from libs.DBUS            import setup_dbus
 
 import config
 
-sys.path.append('/home/cpi/launcher/Menu/GameShell/10_settings/')
-sys.path.append('/home/cpi/launcher/UI/')
-
 if not pygame.display.get_init():
     pygame.display.init()
 if not pygame.font.get_init():
