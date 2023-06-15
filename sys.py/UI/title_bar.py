@@ -91,7 +91,7 @@ class TitleBar:
         return ge
 
     def SyncSoundVolume(self):
-        m = alsaaudio.Mixer()
+        m = alsaaudio.Mixer('HDMI')
         vol = m.getvolume()[0]
 
         snd_segs = [ [0,10],[10,30],[30,70],[70,100] ]
