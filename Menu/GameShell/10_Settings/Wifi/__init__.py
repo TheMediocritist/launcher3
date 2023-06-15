@@ -5,7 +5,7 @@ import sys
 sys.path.append("../Menu/GameShell/10_Settings/Wifi")
 import pages
 import myvars
-sys.path.remove("../Menu/GameShell/10_Settings/Wifi")
+
 """
 try:
     from icons import preload
@@ -24,5 +24,5 @@ def API(main_screen):
         main_screen.SetCurPage(myvars.ScanPage)
         main_screen.Draw()
         main_screen.SwapAndShow()
-
+sys.path.remove("../Menu/GameShell/10_Settings/Wifi")
 
