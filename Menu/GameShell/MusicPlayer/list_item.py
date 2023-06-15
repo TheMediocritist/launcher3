@@ -16,7 +16,7 @@ from UI.util_funcs import midRect
 # | Icon  Text.....    > |
 # ------------------------
 
-import myvars # icons_path
+from MusicPlayer import myvars # icons_path
 
 class ListItemIcon(IconItem):
 

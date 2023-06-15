@@ -4,10 +4,8 @@ import pygame
 import sys
 
 ## local UI import
-sys.path.append("../Menu/GameShell/Music Player")
-import pages
-import myvars
-sys.path.remove("../Menu/GameShell/Music Player")
+from MusicPlayer import pages
+from MusicPlayer import myvars
 
 def Init(main_screen):
     pages.InitPoller()

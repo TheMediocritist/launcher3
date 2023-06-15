@@ -19,7 +19,7 @@ from UI.scroller   import ListScroller
 
 from UI.Emulator.list_item  import ListItem
 
-import myvars
+from MusicPlayer import myvars
 
 class ListPageSelector(PageSelector):
     _BackgroundColor = pygame.Color(131,199,219)
