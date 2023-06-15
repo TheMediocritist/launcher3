@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*- 
 
-from sound_page import SoundPage
+from Sound.sound_page import SoundPage
 
-import myvars
+from Sound import myvars
 
 def InitSoundPage(main_screen):
 
