@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*- 
 
 ## local UI import
-sys.path.append("../Menu/GameShell/10_Settings/Brightness")
-import pages
-import myvars
-sys.path.remove("../Menu/GameShell/10_Settings/Brightness")
+from Brightness import pages
+from Brightness import myvars
 
 def Init(main_screen):
     pages.InitBrightnessPage(main_screen)
