@@ -371,6 +371,7 @@ class MainScreen(object):
                     page._Name = self.ExtraName(i)
                     page._Icons = []
                     self._Pages.append(page)
+                    print("appending page: " + page + " to self._Pages")
                     self.ReadTheDirIntoPages(_dir+"/"+i, pglevel+1 ,self._Pages[ len(self._Pages) -1])
                 else: ## On CurPage now
                     i2 = self.ExtraName(i)
