@@ -8,7 +8,7 @@ from libs.roundrects import aa_round_rect
 #UI lib
 from UI.constants import Width,Height,ICON_TYPES
 from page   import Page,PageSelector
-from label  import Label
+from UI.label  import Label
 from fonts  import fonts
 from UI.util_funcs import midRect
 from UI.keys_def   import CurKeys

@@ -16,7 +16,7 @@ from UI.constants   import Width,Height,bg_color
 from UI.util_funcs  import midRect
 from fonts       import fonts
 from UI.keys_def    import CurKeys
-from label       import Label
+from UI.label       import Label
 
 
 

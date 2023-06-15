@@ -21,11 +21,11 @@ from UI.constants   import Width,Height,bg_color
 from UI.util_funcs  import midRect,FileExists,ReplaceSuffix,ReadTheFileContent,CmdClean,MakeExecutable,SkinMap
 from fonts       import fonts
 from UI.keys_def    import CurKeys
-from label       import Label
-from untitled_icon import UntitledIcon
+from UI.label       import Label
+from UI.untitled_icon import UntitledIcon
 from Emulator    import MyEmulator
 
-from skin_manager import SkinManager
+from UI.skin_manager import SkinManager
 
 class MessageBox(Label):
     _Parent = None
