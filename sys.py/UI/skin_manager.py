@@ -50,7 +50,7 @@ class SkinManager(object):
         
         try:
             self._Config.read(fname)
-        except Exception,e:
+        except Exception as e:
             print("read skin config.cfg error %s" % str(e))
             return
         else:
@@ -61,7 +61,7 @@ class SkinManager(object):
                     if i in colour_opts:
                         try:
                             self._Colors[i] = self.ConvertToRGB(self._Config.get("Colors",i))
-                        except Exception,e:
+                        except Exception as e:
                             print("error in ConvertToRGB %s" % str(e))
                             continue
 
