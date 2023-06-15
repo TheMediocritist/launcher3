@@ -100,7 +100,7 @@ class AboutPage(Page):
         out = {}
         out["key"]="uname"
         out["label"]= "Kernel:"
-        st = subprocess.check_output(["uname","-srmo"])
+        st = str(subprocess.check_output(["uname","-srmo"]))
         st = st.strip("\n")
         st = st.strip("\t")
         out["value"] = st
