@@ -397,7 +397,7 @@ class MainScreen(object):
                         sys.path.append(_dir)
                         #iconitem._CmdPath = importlib.import_module(i)
                         print(sys.path)
-                        iconitem._CmdPath = __import__("GameShell/10_Settings/"+i)
+                        iconitem._CmdPath = __import__("/GameShell/10_Settings/"+i)
                         init_cb  = getattr(iconitem._CmdPath,"Init",None)
                         if init_cb != None:
                             if callable(init_cb):
