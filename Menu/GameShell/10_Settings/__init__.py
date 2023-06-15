@@ -15,6 +15,7 @@ import base64
 from beeprint import pp
 
 ## local UI import
+sys.path.append("../Menu/GameShell/10_Settings")
 print("importing pages.py with sys.path that looks like:")
 print(sys.path)
 import pages
