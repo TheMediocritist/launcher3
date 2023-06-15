@@ -7,12 +7,12 @@ import shutil
 
 #UI lib
 from UI.constants import Width,Height,ICON_TYPES
-from page   import Page,PageSelector
+from UI.page   import Page,PageSelector
 from UI.label  import Label
-from fonts  import fonts
+from UI.fonts  import fonts
 from UI.util_funcs import midRect
 from UI.keys_def   import CurKeys
-from confirm_page import ConfirmPage
+from UI.confirm_page import ConfirmPage
 
 class DeleteConfirmPage(ConfirmPage):
 

@@ -12,17 +12,14 @@ import alsaaudio
 
 ##local import
 from UI.constants   import ICON_TYPES,Width,Height
-from fonts       import fonts
-from icon_item   import IconItem
-from multi_icon_item import MultiIconItem
+from UI.fonts       import fonts
+from UI.icon_item   import IconItem
+from UI.multi_icon_item import MultiIconItem
 from UI.icon_pool   import MyIconPool
-
 from UI.util_funcs  import midRect,SwapAndShow,SkinMap
 
 from config import Battery
-
 from libs.roundrects import aa_round_rect
-
 from libs.DBUS        import is_wifi_connected_now,wifi_strength
 
 icon_base_path = SkinMap("gameshell/titlebar_icons/")

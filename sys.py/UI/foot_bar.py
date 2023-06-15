@@ -7,9 +7,9 @@ import os
 ##local import 
 from UI.constants  import Width,Height,ICON_TYPES,ALIGN
 from UI.util_funcs import FileExists,midRect,SkinMap
-from icon_item  import IconItem
-from fonts      import fonts
-from multi_icon_item import MultiIconItem
+from UI.icon_item  import IconItem
+from UI.fonts      import fonts
+from UI.multi_icon_item import MultiIconItem
 from UI.icon_pool  import MyIconPool
 from libs.roundrects import aa_round_rect
 

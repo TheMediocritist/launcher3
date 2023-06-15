@@ -12,7 +12,7 @@ import base64
 from beeprint import pp
 
 from UI.util_funcs  import midRect,SkinMap
-from fonts       import fonts
+from UI.fonts       import fonts
 
 BlankPng = SkinMap("gameshell/blank.png")  ## 80x80
 ## use blank circle as bg, Two alpha As Icon Label
