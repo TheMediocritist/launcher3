@@ -48,8 +48,8 @@ from libs.DBUS            import setup_dbus
 
 import config
 
-sys.path.append('../Menu/GameShell/10_settings/')
-sys.path.append('/UI/')
+sys.path.append('/home/cpi/launcher/Menu/GameShell/10_settings/')
+sys.path.append('/home/cpi/launcher/UI/')
 
 if not pygame.display.get_init():
     pygame.display.init()
