@@ -3,11 +3,11 @@ import os
 import sys 
 
 ## local UI import
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(os.path.dirname(__file__))
 print(sys.path)
 import pages
 import myvars
-sys.path.remove(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.remove(os.path.dirname(__file__))
 
 def Init(main_screen):
     pages.InitSoundPage(main_screen)
