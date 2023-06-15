@@ -10,7 +10,7 @@ from UI.util_funcs import FileExists,midRect,SkinMap
 from icon_item  import IconItem
 from fonts      import fonts
 from multi_icon_item import MultiIconItem
-from icon_pool  import MyIconPool
+from UI.icon_pool  import MyIconPool
 from libs.roundrects import aa_round_rect
 
 icon_base_path = SkinMap("gameshell/footbar_icons/")

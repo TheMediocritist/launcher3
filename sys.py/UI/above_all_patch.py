@@ -15,7 +15,7 @@ from foot_bar    import FootBar
 from UI.constants   import Width,Height,bg_color
 from UI.util_funcs  import midRect
 from fonts       import fonts
-from keys_def    import CurKeys
+from UI.keys_def    import CurKeys
 from label       import Label
 
 

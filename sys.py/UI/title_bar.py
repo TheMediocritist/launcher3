@@ -15,7 +15,7 @@ from UI.constants   import ICON_TYPES,Width,Height
 from fonts       import fonts
 from icon_item   import IconItem
 from multi_icon_item import MultiIconItem
-from icon_pool   import MyIconPool
+from UI.icon_pool   import MyIconPool
 
 from UI.util_funcs  import midRect,SwapAndShow,SkinMap
 

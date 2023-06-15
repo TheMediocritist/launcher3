@@ -11,7 +11,7 @@ from page   import Page,PageSelector
 from label  import Label
 from fonts  import fonts
 from UI.util_funcs import midRect
-from keys_def   import CurKeys
+from UI.keys_def   import CurKeys
 
 
 
