@@ -14,8 +14,9 @@ except:
 """
 
 def Init(main_screen):
-    pages.InitPasswordPage(main_screen)
-    pages.InitScanPage(main_screen)
+    #pages.InitPasswordPage(main_screen)
+    #pages.InitScanPage(main_screen)
+    print("issues here!")
 
 def API(main_screen):
     
