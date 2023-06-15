@@ -23,7 +23,7 @@ from UI.fonts       import fonts
 from UI.keys_def    import CurKeys
 from UI.label       import Label
 from UI.untitled_icon import UntitledIcon
-from Emulator    import MyEmulator
+from UI.Emulator    import MyEmulator
 
 from UI.skin_manager import SkinManager
 
