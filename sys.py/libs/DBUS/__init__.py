@@ -29,6 +29,7 @@ bus = daemon = wireless = wired = None
 def setup_dbus(force=True):
     global bus,daemon,wireless,wired
     try:
+        print("deleted dbusmanager") 
         #dbusmanager.connect_to_dbus()
     except dbus.DBusException:
         print >> sys.stderr,\
