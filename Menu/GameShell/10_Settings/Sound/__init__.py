@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*- 
 
 ## local UI import
+sys.path.append("../Menu/GameShell/10_Settings/Sound")
 import pages
 import myvars
+sys.path.remove("../Menu/GameShell/10_Settings/Sound")
 
 def Init(main_screen):
     pages.InitSoundPage(main_screen)

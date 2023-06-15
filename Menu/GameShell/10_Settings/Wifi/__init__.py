@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*- 
 
 ## local UI import
+sys.path.append("../Menu/GameShell/10_Settings/Wifi")
 import pages
 import myvars
+sys.path.remove("../Menu/GameShell/10_Settings/Wifi")
 """
 try:
     from icons import preload
