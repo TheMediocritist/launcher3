@@ -359,7 +359,7 @@ if __name__ == '__main__':
     pygame.event.set_allowed(None) 
     pygame.event.set_allowed([pygame.KEYDOWN,pygame.KEYUP,GMEVT,RUNEVT,RUNSYS])
     
-    pygame.key.set_repeat(DT+DT*6+DT/2, DT+DT*3+DT/2)
+    pygame.key.set_repeat(int(DT+DT*6+DT/2), int(DT+DT*3+DT/2))
 
 
     MyIconPool.Init()
