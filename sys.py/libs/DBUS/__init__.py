@@ -26,25 +26,25 @@ else:
 bus = daemon = wireless = wired = None
 
 
-def setup_dbus(force=True):
-    global bus,daemon,wireless,wired
-    try:
-        dbusmanager.connect_to_dbus()
-    except dbus.DBusException:
-        print >> sys.stderr,\
-            _("Can't connect to wicd daemon,trying to start it automatically...")
-    else:
-        bus = dbusmanager.get_bus()
-        dbus_ifaces = dbusmanager.get_dbus_ifaces()
-        daemon      = dbus_ifaces["daemon"] ## @dbus.service.method('org.wicd.daemon')
-        wireless    = dbus_ifaces["wireless"] ## @dbus.service.method('org.wicd.daemon.wireless')
-        wired       = dbus_ifaces["wired"]    ## @
-
-        if not daemon:
-            print("Error connecting to wicd via D-Bus")
-
-    
-    return True
+# def setup_dbus(force=True):
+#     global bus,daemon,wireless,wired
+#     try:
+#         dbusmanager.connect_to_dbus()
+#     except dbus.DBusException:
+#         print >> sys.stderr,\
+#             _("Can't connect to wicd daemon,trying to start it automatically...")
+#     else:
+#         bus = dbusmanager.get_bus()
+#         dbus_ifaces = dbusmanager.get_dbus_ifaces()
+#         daemon      = dbus_ifaces["daemon"] ## @dbus.service.method('org.wicd.daemon')
+#         wireless    = dbus_ifaces["wireless"] ## @dbus.service.method('org.wicd.daemon.wireless')
+#         wired       = dbus_ifaces["wired"]    ## @
+# 
+#         if not daemon:
+#             print("Error connecting to wicd via D-Bus")
+# 
+#     
+#     return True
 
 
 def wifi_strength():
