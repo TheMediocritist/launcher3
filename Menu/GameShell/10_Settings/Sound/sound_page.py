@@ -122,7 +122,7 @@ class SoundPage(Page):
 
         self._MySlider.Init()
         
-        m = alsaaudio.Mixer()
+        m = alsaaudio.Mixer('HDMI')
         self._MySlider.SetValue(m.getvolume()[0])
 
     def OnLoadCb(self):
