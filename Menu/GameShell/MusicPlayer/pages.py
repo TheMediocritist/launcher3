@@ -2,9 +2,9 @@
 
 from libs.MPD import poller
 
-from play_list_page      import PlayListPage
-from music_lib_list_page import MusicLibListPage
-from mpd_spectrum_page   import MPDSpectrumPage
+from MusicPlayer.play_list_page      import PlayListPage
+from MusicPlayer.music_lib_list_page import MusicLibListPage
+from MusicPlayer.mpd_spectrum_page   import MPDSpectrumPage
 from MusicPlayer import myvars
 
 from config import MPD_socket
