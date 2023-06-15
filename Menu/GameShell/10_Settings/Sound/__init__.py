@@ -5,7 +5,7 @@ import sys
 ## local UI import
 sys.path.append(os.path.dirname(__file__))
 print(sys.path)
-import pages
+from Sound import pages
 import myvars
 sys.path.remove(os.path.dirname(__file__))
 
