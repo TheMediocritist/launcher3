@@ -398,7 +398,6 @@ class MainScreen(object):
                         iconitem._MyType  = ICON_TYPES["FUNC"]
                         print("appending " + _dir + "to sys.path")
                         sys.path.append(_dir)
-                        #iconitem._CmdPath = importlib.import_module(i)
                         print("importing " + str(i))
                         iconitem._CmdPath = __import__(i)
                         print("Imported: " + str(i))
