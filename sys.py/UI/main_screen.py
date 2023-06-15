@@ -397,9 +397,10 @@ class MainScreen(object):
                         print(str(self) + "Is python package")
                         iconitem._MyType  = ICON_TYPES["FUNC"]
                         print("appending " + _dir + "to sys.path")
-                        #sys.path.append(_dir)
+                        sys.path.append(_dir)
                         print("importing " + str(i))
                         iconitem._CmdPath = __import__(i)
+                        sys.path.remove(_dir)
                         print("Imported: " + str(i))
                         init_cb  = getattr(iconitem._CmdPath,"Init",None)
                         if init_cb != None:
