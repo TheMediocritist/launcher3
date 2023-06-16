@@ -12,14 +12,13 @@ if not pygame.font.get_init():
     pygame.font.init()
 
 skinpath = "../skin/"+config.SKIN+"/truetype"
-#skinpath = "/home/cpi/launcher/skin/"+config.SKIN+"/truetype"
 
 fonts_path = {}
 
 fonts_path["varela"]   = "%s/VarelaRound-Regular.ttf" % skinpath
 fonts_path["veramono"] = "%s/VeraMono.ttf" % skinpath
 fonts_path["noto"]     = "%s/NotoSansMono-Regular.ttf" % skinpath
-#fonts_path["notocjk"]     = "%s/NotoSansCJK-Regular.ttf" % skinpath
+fonts_path["notocjk"]     = "%s/NotoSansCJK-Regular.ttf" % skinpath
 
 fonts = {}
 fonts["varela12"] = pygame.font.Font(fonts_path["varela"],12)
@@ -58,8 +57,8 @@ fonts["veramono10"] = pygame.font.Font(fonts_path["veramono"],10)
 for i in range(10,18):
     fonts["notosansmono"+str(i)] = pygame.font.Font(fonts_path["noto"],i)
 
-#for i in range(10,18):
-#    fonts["notosanscjk"+str(i)] = pygame.font.Font(fonts_path["notocjk"],i)
+for i in range(10,18):
+    fonts["notosanscjk"+str(i)] = pygame.font.Font(fonts_path["notocjk"],i)
     
 fonts["arial"] = pygame.font.SysFont("arial",16)
 
