@@ -46,7 +46,7 @@ class PIFI(object):
         
         # Initialization : frequency bins
         freq = Fft.fftfreq(self.sampleSize) * self.samplingRate
-        freqR = freq[:self.sampleSize/2]
+        freqR = freq[:int(self.sampleSize/2)]
         self.bins = freqR[self.firstSelectedBin:self.firstSelectedBin+self.numberOfSelectedBins]
         
         self.resetSmoothing()
