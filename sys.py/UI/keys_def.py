@@ -52,7 +52,8 @@ PC["Enter"] = pygame.K_RETURN
 PC["Space"] = pygame.K_SPACE
 PC["Start"] = pygame.K_s
 
-if CurKeySet == "PC":
-    CurKeys = PC
-else:
-    CurKeys = GameShell
+CurKeys == "PC"
+# if CurKeySet == "PC":
+#     CurKeys = PC
+# else:
+#     CurKeys = GameShell
