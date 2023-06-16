@@ -8,9 +8,8 @@ import sys
 import importlib
 
 from libs import easing
-from datetime import datetime
-
-from beeprint import pp
+#from datetime import datetime
+#from beeprint import pp
 
 ## local package import
 from UI.constants   import ICON_TYPES,icon_ext,icon_width,icon_height,RUNEVT
@@ -91,7 +90,6 @@ class MessageBox(Label):
         padding = 5
         x = (self._Parent._Width - self._Width)/2
         y = (self._Parent._Height - self._Height)/2
-       # print("x %d y %d w %d h %d" %(x,y,self._Width,self._Height ))
         
         pygame.draw.rect(self._HWND,(255,255,255),(x-padding,y-padding, self._Width+padding*2,self._Height+padding*2))        
     
@@ -135,7 +133,7 @@ class MainScreen(object):
         self._MsgBox= MessageBox()
         self._MsgBox._Parent= self
         self._MsgBox.Init(" ", self._MsgBoxFont)
-
+        
         self._SkinManager = SkinManager()
         self._SkinManager.Init()
         
@@ -151,8 +149,7 @@ class MainScreen(object):
             if self._Pages[i]._IconNumbers > 1:
                 self._Pages[i]._PsIndex = 1
                 self._Pages[i]._IconIndex = self._Pages[i]._PsIndex
-            
-                
+        
         self._CurrentPage = self._Pages[self._PageIndex]
         self._CurrentPage._OnShow = True
 
@@ -161,7 +158,7 @@ class MainScreen(object):
         if ret > (self._PageMax -1):
             ret = self._PageMax -1
         return ret
-    
+
     def PageMoveLeft(self):
         self._Pages[self._PageIndex]._OnShow = False
         if self._PageIndex < (self._PageMax - 1):
@@ -197,7 +194,6 @@ class MainScreen(object):
             for i in range(0,self._PageMax):
                 if i!= self._PageIndex and i!= my_left_side_page:
                     pass
-                #self._Pages[i].MoveRight(Width)
 
             self._Pages[self._PageIndex].EasingRight(Width)
 
@@ -213,7 +209,6 @@ class MainScreen(object):
         self._Pages[self._PageIndex]._OnShow = True
         self._CurrentPage = self._Pages[self._PageIndex]
 
-
     def EasingAllPageLeft(self):
         current_time = 0.0
         start_posx = 0.0
@@ -225,6 +220,7 @@ class MainScreen(object):
         all_last_posx = []
         if self._PageIndex >= (self._PageMax - 1):
             return
+
         for i in range(0,Width*dur):
             current_posx = easing.SineIn(current_time,start_posx,final_posx-start_posx,float(dur))
             if current_posx >= final_posx:
@@ -249,8 +245,7 @@ class MainScreen(object):
                 j._PosX -= i
                 j.DrawIcons()
                 j._Screen.SwapAndShow()
-                
-        
+
         self._Pages[self._PageIndex]._OnShow = False
 
         self._PageIndex+=1
@@ -479,16 +474,16 @@ class MainScreen(object):
                     iconitem._LinkPage = None
                     cur_page._Icons.append(iconitem)
 
-    def RunEXE(self,cmdpath):
+    def RunEXE(self, cmdpath):
         self.DrawRun()
         self.SwapAndShow()
         pygame.time.delay(1000)
         cmdpath = cmdpath.strip()
         cmdpath = CmdClean(cmdpath)
 
-        pygame.event.post( pygame.event.Event(RUNEVT, message=cmdpath))
+        pygame.event.post(pygame.event.Event(RUNEVT, message=cmdpath))
 
-    def OnExitCb(self,event):
+    def OnExitCb(self, event):
         ## leave rest to Pages
         on_exit_cb = getattr(self._CurrentPage,"OnExitCb",None)
         if on_exit_cb != None:
@@ -496,7 +491,7 @@ class MainScreen(object):
                 self._CurrentPage.OnExitCb(event)
         return
 
-    def KeyDown(self,event):
+    def KeyDown(self, event):
         print("KeyDown: " + str(event.key))
         """
         if event.key == pygame.K_PAGEUP:
@@ -513,18 +508,17 @@ class MainScreen(object):
         if event.key == CurKeys["Space"]:
             self.Draw()
             self.SwapAndShow()
-            
+
         ## leave rest to Pages
-        current_page_key_down_cb = getattr(self._CurrentPage,"KeyDown",None)
+        current_page_key_down_cb = getattr(self._CurrentPage, "KeyDown", None)
         if current_page_key_down_cb != None:
             if callable( current_page_key_down_cb ):
                 self._CurrentPage.KeyDown(event)
-                
-    
+
     def DrawRun(self):
         self._MsgBox.SetText("Launching....")
         self._MsgBox.Draw()
-    
+
     def Draw(self):
         self._CurrentPage.Draw()
         if self._TitleBar != None:
