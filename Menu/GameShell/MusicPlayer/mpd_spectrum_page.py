@@ -18,7 +18,7 @@ from UI.fonts  import fonts
 from UI.util_funcs import midRect
 from UI.keys_def   import CurKeys
 
-from Queue import Queue, Empty
+from queue import Queue, Empty
 from threading  import Thread
 
 
