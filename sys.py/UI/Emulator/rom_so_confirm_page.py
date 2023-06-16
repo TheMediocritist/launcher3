@@ -6,7 +6,7 @@ import pygame
 
 import glob
 import shutil
-import gobject
+#from gi.repository import GObject
 import validators
 #from pySmartDL import SmartDL
 

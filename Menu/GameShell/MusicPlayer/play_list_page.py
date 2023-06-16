@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 import os
 import pygame
-import gobject
+from gi.repository import GObject
 
 from libs.roundrects import aa_round_rect
 
@@ -164,7 +164,7 @@ class PlayListPage(Page):
         self._PsIndex = 0
 
         self.SyncList()
-        gobject.timeout_add(850,self.GObjectInterval)
+        GObject.timeout_add(850,self.GObjectInterval)
 
         self._BGpng = IconItem()
         self._BGpng._ImgSurf = MyIconPool._Icons["heart"]

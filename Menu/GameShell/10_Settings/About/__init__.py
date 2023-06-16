@@ -6,7 +6,7 @@ import subprocess
 
 #from beeprint import pp
 from libs.roundrects import aa_round_rect
-#import gobject
+#from gi.repository import GObject
 #from wicd import misc 
 ## local UI import
 from UI.constants import Width,Height,ICON_TYPES

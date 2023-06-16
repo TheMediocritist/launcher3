@@ -15,7 +15,7 @@ import sys
 #from wicd import misc
 
 import time
-import gobject
+#from gi.repository import GObject
 
 if getattr(dbus, 'version', (0, 0, 0)) < (0, 80, 0):
     import dbus.glib

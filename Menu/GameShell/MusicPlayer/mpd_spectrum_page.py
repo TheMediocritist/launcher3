@@ -6,7 +6,7 @@ import pygame
 from numpy import fromstring,ceil,abs,log10,isnan,isinf,int16
 from numpy import fft as Fft
 
-import gobject
+from gi.repository import GObject
 
 from beeprint import pp
 
@@ -162,7 +162,7 @@ class MPDSpectrumPage(Page):
 
         self.Start()
 
-        self._GobjectIntervalId = gobject.timeout_add(50,self.Playing)
+        self._GobjectIntervalId = GObject.timeout_add(50,self.Playing)
         
     def Start(self):
         
@@ -219,11 +219,11 @@ class MPDSpectrumPage(Page):
         
         try:
             if self._GobjectIntervalId != -1:
-                gobject.source_remove(self._GobjectIntervalId)
+                GObject.source_remove(self._GobjectIntervalId)
         except:
             pass
         
-        self._GobjectIntervalId = gobject.timeout_add(50,self.Playing)
+        self._GobjectIntervalId = GObject.timeout_add(50,self.Playing)
 
     
     def KeyDown(self,event):

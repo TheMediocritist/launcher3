@@ -4,7 +4,7 @@ import pygame
 import os
 import requests
 import validators
-import gobject
+from gi.repository import GObject
 
 
 ## local UI import

@@ -4,7 +4,7 @@ import pygame
 
 from beeprint import pp
 from libs.roundrects import aa_round_rect
-import gobject
+from gi.repository import GObject
 #from wicd import misc 
 ## local UI import
 from UI.constants import Width,Height
@@ -512,7 +512,7 @@ class WifiList(Page):
         self._Connecting = wireless_connecting
         
         if self._Connecting:
-            gobject.timeout_add(250,self.SetConnectingStatus,fast)
+            GObject.timeout_add(250,self.SetConnectingStatus,fast)
         else:
             if not fast:
                 iwconfig = self._Wireless.GetIwconfig()

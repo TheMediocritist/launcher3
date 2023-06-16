@@ -2,7 +2,7 @@
 import os
 import pygame
 
-import gobject
+from gi.repository import GObject
 import validators
 
 
@@ -171,11 +171,11 @@ class DownloadProcessPage(Page):
         self._Downloader = Download(url,dst_dir,None)
         self._Downloader.start()
         
-        self._DownloaderTimer = gobject.timeout_add(100, self.GObjectUpdateProcessInterval)
+        self._DownloaderTimer = GObject.timeout_add(100, self.GObjectUpdateProcessInterval)
         
     def KeyDown(self,event):
         if event.key == CurKeys["Menu"] or event.key == CurKeys["A"]:
-            gobject.source_remove(self._DownloaderTimer)
+            GObject.source_remove(self._DownloaderTimer)
             self._DownloaderTimer = -1
             
             if self._Downloader != None:
