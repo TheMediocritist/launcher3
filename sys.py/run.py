@@ -242,7 +242,7 @@ def gobject_pygame_event_timer(main_screen):
     return True 
 
 
-#@misc.threaded
+@misc.threaded
 def socket_thread(main_screen):
     socket_path = "/tmp/gameshell"
     if os.path.exists(socket_path):
