@@ -334,9 +334,8 @@ def big_loop():
     main_screen.SwapAndShow()
 
     #gobject.timeout_add(DT,GObject_pygame_event_timer,main_screen)
-    GObject.timeout_add(DT,gobject_pygame_event_poll_timer,main_screen)
-    GObject.timeout_add(3000,title_bar.GObjectRoundRobin)
-
+    GLib.timeout_add(DT, gobject_pygame_event_poll_timer, main_screen)
+    GLib.timeout_add(3000, title_bar.GObjectRoundRobin)
 
     socket_thread(main_screen)
     
