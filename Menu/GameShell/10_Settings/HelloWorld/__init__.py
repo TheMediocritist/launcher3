@@ -83,8 +83,8 @@ class HelloWorldPage(Page):
 
     _Scrolled = 0
     
-    _BGwidth = 320
-    _BGheight = 240-24-20
+    _BGwidth = 400
+    _BGheight = 400-24-20
 
     _DrawOnce = False
     _Scroller = None

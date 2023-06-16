@@ -12,7 +12,7 @@ import base64
 from beeprint import pp
 
 
-Width = 320
+Width = 400
 Height = 240
 bg_color =  pygame.Color(255,255,255)
 
