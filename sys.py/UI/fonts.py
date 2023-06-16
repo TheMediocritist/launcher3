@@ -58,8 +58,8 @@ fonts["veramono10"] = pygame.font.Font(fonts_path["veramono"],10)
 for i in range(10,18):
     fonts["notosansmono"+str(i)] = pygame.font.Font(fonts_path["noto"],i)
 
-for i in range(10,18):
-    fonts["notosanscjk"+str(i)] = pygame.font.Font(fonts_path["notocjk"],i)
+#for i in range(10,18):
+#    fonts["notosanscjk"+str(i)] = pygame.font.Font(fonts_path["notocjk"],i)
     
 fonts["arial"] = pygame.font.SysFont("arial",16)
 
