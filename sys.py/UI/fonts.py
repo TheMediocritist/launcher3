@@ -11,7 +11,9 @@ import config
 if not pygame.font.get_init():
     pygame.font.init()
 
-skinpath = "skin/"+config.SKIN+"/truetype"
+skinpath = "../skin/"+config.SKIN+"/truetype"
+skinpath = "/home/launcher/skin/"+config.SKIN+"/truetype"
+
 fonts_path = {}
 
 fonts_path["varela"]   = "%s/VarelaRound-Regular.ttf" % skinpath
