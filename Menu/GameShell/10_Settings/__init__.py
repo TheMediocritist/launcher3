@@ -12,8 +12,10 @@ import base64
 from beeprint import pp
 
 ## local UI import
-from 10_Settings import pages
-from 10_Settings import myvars
+sys.path.append("../Menu/GameShell/10_Settings")
+import pages
+import myvars
+sys.path.remove("../Menu/GameShell/10_Settings")
 
 def Init(main_screen):
     pages.InitListPage(main_screen)
