@@ -12,8 +12,8 @@ import base64
 from beeprint import pp
 
 ## local UI import
-import pages
-import myvars
+from 10_Settings import pages
+from 10_Settings import myvars
 
 def Init(main_screen):
     pages.InitListPage(main_screen)
