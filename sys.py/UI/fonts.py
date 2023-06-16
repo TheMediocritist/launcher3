@@ -12,7 +12,7 @@ if not pygame.font.get_init():
     pygame.font.init()
 
 skinpath = "../skin/"+config.SKIN+"/truetype"
-skinpath = "/home/launcher/skin/"+config.SKIN+"/truetype"
+skinpath = "/home/cpi/launcher/skin/"+config.SKIN+"/truetype"
 
 fonts_path = {}
 
