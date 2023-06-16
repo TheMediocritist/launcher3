@@ -63,17 +63,6 @@ everytime_keydown = time.time()
 
 last_brt = -1
 
-# def gobject_loop():
-#     """
-#     here to receive dbus signal 
-#     """ 
-#     try:
-#         gobject_main_loop.run()
-#     except KeyboardInterrupt:
-#         gobject_main_loop.quit()
-#         exit(-1)
-
-
 def RestoreLastBackLightBrightness(main_screen):
     global last_brt
     
@@ -103,7 +92,7 @@ def RestoreLastBackLightBrightness(main_screen):
                 return
 
 def InspectionTeam(main_screen):
-    global everytime_keydown,last_brt
+    global everytime_keydown, last_brt
     
     cur_time = time.time()
 
@@ -133,7 +122,8 @@ def InspectionTeam(main_screen):
         
     return True
 
-def event_process(event,main_screen):
+def event_process(event, main_screen):
+    print("event_process: " + str(event))
     global sound_patch
     global everytime_keydown 
     if event != None:
