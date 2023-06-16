@@ -497,6 +497,7 @@ class MainScreen(object):
         return
 
     def KeyDown(self,event):
+        print("KeyDown: " + str(event.key))
         """
         if event.key == pygame.K_PAGEUP:
             self.EasingAllPageLeft()

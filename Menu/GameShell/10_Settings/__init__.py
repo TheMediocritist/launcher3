@@ -27,4 +27,3 @@ def API(main_screen):
         main_screen.SetCurPage(myvars.ListPage)
         main_screen.Draw()
         main_screen.SwapAndShow()
-        
