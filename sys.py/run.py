@@ -358,22 +358,17 @@ if __name__ == '__main__':
     
     pygame.key.set_repeat(int(DT+DT*6+DT/2), int(DT+DT*3+DT/2))
 
-
     MyIconPool.Init()
     
     setup_dbus()
 
     Gdk.threads_init()
     
-    gobject_main_loop = GObject.MainLoop()
+    gobject_main_loop = GLib.MainLoop()
 
-#    if pygame.display.get_active() == True:
-#        print("I am actived")
-    
     if pygame.image.get_extended() == False:
         print("This pygame does not support PNG")
         exit()
-
     
     big_loop()
     
