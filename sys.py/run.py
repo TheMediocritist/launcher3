@@ -63,15 +63,15 @@ everytime_keydown = time.time()
 
 last_brt = -1
 
-def gobject_loop():
-    """
-    here to receive dbus signal 
-    """ 
-    try:
-        gobject_main_loop.run()
-    except KeyboardInterrupt:
-        gobject_main_loop.quit()
-        exit(-1)
+# def gobject_loop():
+#     """
+#     here to receive dbus signal 
+#     """ 
+#     try:
+#         gobject_main_loop.run()
+#     except KeyboardInterrupt:
+#         gobject_main_loop.quit()
+#         exit(-1)
 
 
 def RestoreLastBackLightBrightness(main_screen):
@@ -187,7 +187,6 @@ def event_process(event,main_screen):
                 os.exelp("python","python"," "+myscriptname)
             return
         if event.type == pygame.KEYUP:
-            
             pygame.event.clear(pygame.KEYDOWN)
             return
         if event.type == pygame.KEYDOWN:
@@ -238,7 +237,7 @@ def gobject_pygame_event_poll_timer(main_screen):
     
     event = pygame.event.poll()
 
-    event_process(event,main_screen)
+    event_process(event, main_screen)
 
     InspectionTeam(main_screen)
     
@@ -248,7 +247,7 @@ def gobject_pygame_event_timer(main_screen):
     global sound_patch
     
     for event in pygame.event.get():
-        event_process(event,main_screen)
+        event_process(event, main_screen)
     
     return True 
 
@@ -333,13 +332,17 @@ def big_loop():
     main_screen.Draw()
     main_screen.SwapAndShow()
 
-    #gobject.timeout_add(DT,GObject_pygame_event_timer,main_screen)
     GLib.timeout_add(DT, gobject_pygame_event_poll_timer, main_screen)
     GLib.timeout_add(3000, title_bar.GObjectRoundRobin)
 
     socket_thread(main_screen)
     
-    gobject_loop()
+    #gobject_loop()
+    try:
+        gobject_main_loop.run()
+    except KeyboardInterrupt:
+        gobject_main_loop.quit()
+        exit(-1)
     
 
 ###MAIN()###
