@@ -222,10 +222,6 @@ def event_process(event,main_screen):
                     sound_patch.Draw()
                     
                     main_screen.SwapAndShow()
-                    #pygame.time.delay(200)
-                    #main_screen.Draw()
-                    #main_screen.SwapAndShow()
-                    
             
             ###########################################################
             if event.key == pygame.K_ESCAPE:

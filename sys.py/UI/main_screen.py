@@ -526,8 +526,6 @@ class MainScreen(object):
     
     def Draw(self):
         self._CurrentPage.Draw()
-        #if self._HWND != None:
-        #    self._HWND.blit(self._CanvasHWND,(self._PosX,self._PosY,self._Width,self._Height))
         if self._TitleBar != None:
             self._TitleBar.Draw(self._CurrentPage._Name)
         if self._FootBar  != None:

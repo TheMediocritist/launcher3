@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*- 
 
-print("now we're in 10_Settings __init__.py")
-
-
 import pygame
 from pygame.locals import *
 from sys import exit
@@ -15,12 +12,8 @@ import base64
 from beeprint import pp
 
 ## local UI import
-sys.path.append("../Menu/GameShell/10_Settings")
-print("importing pages.py with sys.path that looks like:")
-print(sys.path)
 import pages
 import myvars
-sys.path.remove("../Menu/GameShell/10_Settings")
 
 def Init(main_screen):
     pages.InitListPage(main_screen)
